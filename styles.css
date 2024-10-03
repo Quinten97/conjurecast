@@ -28,27 +28,41 @@ header {
   place-items: center;
 }
 
+.navbar {
+  width: 100vw;
+  height: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+  background-color: var(--conjured-blue);
+  filter: drop-shadow(0px 5px 10px #000000);
+}
+
+a {
+  text-decoration: none;
+  color: var(--conjured-grey);
+  height: 100%;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  font-size: 20px;
+}
+
+a:hover {
+  color: var(--conjured-light-purple);
+}
+
 #logo-container {
   display: grid;
   place-items: center;
+  margin-top: 5rem;
 }
 
 #header-text-image {
-  width: 75%;
-}
-
-#header-logo-container {
-  width: 400px;
-  height: 400px;
-  border-radius: 100%;
-  overflow: hidden;
-  position: relative;
+  width: 50vw;
+  filter: drop-shadow(0px 0px 15px #000000);
 }
 
 #header-logo-image {
-  width: 430px;
-  height: 430px;
-  position: absolute;
-  left: -30px;
-  top: -20px;
+  filter: drop-shadow(0px 0px 15px #000000);
 }
