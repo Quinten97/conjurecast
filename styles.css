@@ -14,7 +14,7 @@
   --conjured-light-purple: #c490c5;
   --conjured-black: #000000;
   --conjured-blue: #253060;
-  --conjured-dark-purple: #814f82;
+  --conjured-dark-purple: rgb(129, 79, 130);
 }
 
 html {
@@ -87,6 +87,38 @@ header {
   100% {
     opacity: 1;
   }
+}
+
+#stream-container {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.stream-image {
+  filter: brightness(0.5);
+  width: 80%;
+  z-index: -5;
+  position: relative;
+}
+
+.stream-link-container {
+  border: 1px solid;
+  width: 100%;
+  height: 100%;
+}
+
+.stream-link {
+  width: 8%;
+  border-radius: 0.25rem;
+  display: grid;
+  place-items: center;
+  background-color: var(--conjured-grey);
+  padding: 1rem;
+}
+
+.stream-link:hover {
+  filter: brightness(0.8);
 }
 
 footer {
