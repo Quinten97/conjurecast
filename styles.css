@@ -26,10 +26,11 @@ body {
 header {
   display: grid;
   place-items: center;
+  width: 100%;
 }
 
 .navbar {
-  width: 100vw;
+  width: 100%;
   height: 4rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -38,7 +39,7 @@ header {
   filter: drop-shadow(0px 5px 10px #000000);
 }
 
-a {
+#navbar-link {
   text-decoration: none;
   color: var(--conjured-grey);
   height: 100%;
@@ -56,6 +57,19 @@ a:hover {
   display: grid;
   place-items: center;
   margin-top: 5rem;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 #header-text-image {
@@ -65,4 +79,14 @@ a:hover {
 
 #header-logo-image {
   filter: drop-shadow(0px 0px 15px #000000);
+}
+
+main {
+}
+
+footer {
+  background-color: var(--conjured-blue);
+  color: var(--conjured-grey);
+  width: 100%;
+  height: 4rem;
 }

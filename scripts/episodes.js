@@ -23,7 +23,6 @@ function cleanDescription(description) {
 fetch(apiUrl)
   .then((response) => response.json())
   .then((data) => {
-    console.log(data);
     const episodesList = document.getElementById("episodes-list");
     data.items.forEach((item) => {
       const cleanedDescription = cleanDescription(item.description);

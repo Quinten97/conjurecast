@@ -9,13 +9,14 @@
     />
     <title>ConjureCast</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./styles/audioPlayer.css" />
   </head>
   <body>
     <header>
       <nav class="navbar">
-        <a href="index.html">Home</a>
-        <a href="./pages/about.html">About</a>
-        <a href="./pages/dnd-americana.html">DnD Americana</a>
+        <a id="navbar-link" href="index.html">Home</a>
+        <a id="navbar-link" href="./pages/about.html">About</a>
+        <a id="navbar-link" href="./pages/dnd-americana.html">DnD Americana</a>
       </nav>
       <div id="logo-container">
         <div id="header-logo-container">
@@ -33,16 +34,11 @@
       </div>
     </header>
     <main>
-      <section>
-        <h2>Welcome to My Podcast</h2>
-        <p>
-          Explore various topics and enjoy engaging discussions. Check out our
-          episodes under the "DnD Americana" section!
-        </p>
-      </section>
+      <section id="newest-episode-container"></section>
     </main>
     <footer>
-      <p>© 2024 My Podcast</p>
+      <p>© 2024 ConjureCast</p>
     </footer>
+    <script src="./scripts/newestEpisode.js"></script>
   </body>
 </html>
