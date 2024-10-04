@@ -31,29 +31,36 @@ fetch(apiUrl)
 
     // Create custom player layout
     newestEpisodeContainer.innerHTML = `
-      <div class="audio-player-card">
-  <img src="${newestEpisode.thumbnail}" alt="${
+    <div class="audio-player-card">
+        <img src="${newestEpisode.thumbnail}" alt="${
       newestEpisode.title
     }" class="thumbnail" />
-  <div class="episode-info">
-    <h3>${newestEpisode.title}</h3>
-    <p class="pub-date">${newestEpisode.pubDate.substring(0, 10)}</p>
-    <p class="episode-description">${newestEpisode.description}</p>
-  </div>
-  <div class="audio-player">
-    <audio id="newestEpisodeAudio">
-      <source src="${newestEpisode.enclosure.link}" type="audio/mpeg">
-      Your browser does not support the audio element.
-    </audio>
-    <div class="audio-controls">
-      <button id="playPauseBtn">Play</button>
-      <input type="range" id="seekBar" value="0" max="100" class="seek-bar">
-      <span id="currentTime">0:00</span> / <span id="duration">0:00</span>
-      <button id="muteBtn">Mute</button>
-      <input type="range" id="volumeBar" min="0" max="1" step="0.1" value="1" class="volume-bar">
+        <div class="episode-info">
+            <div class="info-container">
+                <h3 class="episode-title">${newestEpisode.title}</h3>
+                <p class="pub-date">${newestEpisode.pubDate.substring(
+                  0,
+                  10
+                )}</p>
+                <p class="episode-description">${newestEpisode.description}</p>
+            </div>
+            <div class="audio-player">
+                <audio id="newestEpisodeAudio">
+                    <source src="${
+                      newestEpisode.enclosure.link
+                    }" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="audio-controls">
+                    <button id="playPauseBtn">Play</button>
+                    <input type="range" id="seekBar" value="0" max="100" class="seek-bar">
+                    <span id="currentTime">0:00</span><p>/</p><span id="duration">0:00</span>
+                    <button id="muteBtn">Mute</button>
+                    <input type="range" id="volumeBar" min="0" max="1" step="0.1" value="1" class="volume-bar">
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
     `;
 
     const audio = document.getElementById("newestEpisodeAudio");

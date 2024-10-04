@@ -57,7 +57,7 @@ header {
   font-size: 20px;
 }
 
-a:hover {
+#navbar-link:hover {
   color: var(--conjured-light-purple);
 }
 
@@ -89,12 +89,14 @@ a:hover {
   }
 }
 
-main {
-}
-
 footer {
   background-color: var(--conjured-blue);
   color: var(--conjured-grey);
   width: 100%;
   height: 4rem;
+}
+
+.seek-bar,
+.volume-bar {
+  accent-color: var(--conjured-dark-purple);
 }
