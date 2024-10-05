@@ -14,21 +14,16 @@
   --conjured-light-purple: #c490c5;
   --conjured-black: #000000;
   --conjured-blue: #253060;
-  --conjured-dark-purple: rgb(129, 79, 130);
-}
-
-html {
-  display: grid;
-  place-items: center;
+  --conjured-dark-purple: #814f82;
 }
 
 body {
   background-image: url("https://i.imgur.com/4VRY0Mr.png");
-  width: 75%;
+  width: 100%;
   background-color: var(--conjured-grey);
   background-repeat: repeat-y;
   background-position: center;
-  background-size: 75%;
+  background-size: 100%;
 }
 
 header {
@@ -90,35 +85,91 @@ header {
 }
 
 #stream-container {
+  position: relative;
   width: 100%;
   display: grid;
   place-items: center;
-}
-
-.stream-image {
-  filter: brightness(0.5);
-  width: 80%;
-  z-index: -5;
-  position: relative;
-}
-
-.stream-link-container {
-  border: 1px solid;
-  width: 100%;
-  height: 100%;
 }
 
 .stream-link {
-  width: 8%;
+  display: block;
+  width: 10%;
+  height: 20%;
   border-radius: 0.25rem;
-  display: grid;
-  place-items: center;
   background-color: var(--conjured-grey);
   padding: 1rem;
+  z-index: 5;
+  position: absolute; /* Absolute positioning to overlay on the image */
+  top: 45%; /* Adjust the top position */
+  left: 60%; /* Adjust the left position (you can use percentages or px for precise placement) */
+  display: grid;
+  place-items: center;
+}
+
+.stream-link:nth-child(2) {
+  left: 30%; /* Offset the second link from the first one */
 }
 
 .stream-link:hover {
   filter: brightness(0.8);
+}
+
+.stream-link > img {
+  width: 90%;
+}
+
+.stream-image {
+  filter: brightness(0.5);
+  filter: blur(0.15rem);
+  width: 80%;
+  border: 5px solid black;
+}
+
+.support-section {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 5rem;
+}
+
+.patreon-container {
+  background-image: url(./assets/patreon-image.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  display: grid;
+  place-items: center;
+  width: 50%;
+  position: relative;
+  padding-top: 25.25%;
+}
+
+.dubby-container {
+  background-image: url(./assets/dubby.gif);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  display: grid;
+  place-items: center;
+  width: 50%;
+  position: relative;
+  padding-top: 25.25%;
+}
+
+.support-link {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+.patreon-container:hover,
+.dubby-container:hover {
+  filter: brightness(0.75);
 }
 
 footer {
@@ -126,9 +177,4 @@ footer {
   color: var(--conjured-grey);
   width: 100%;
   height: 4rem;
-}
-
-.seek-bar,
-.volume-bar {
-  accent-color: var(--conjured-dark-purple);
 }

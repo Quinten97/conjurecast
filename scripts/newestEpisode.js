@@ -42,7 +42,11 @@ fetch(apiUrl)
                   0,
                   10
                 )}</p>
-                <p class="episode-description">${newestEpisode.description}</p>
+                <p class="episode-description">${newestEpisode.description.replace(
+                  /<\/?p>/g,
+                  ""
+                )}
+                </p>
             </div>
             <div class="audio-player">
                 <audio id="newestEpisodeAudio">
