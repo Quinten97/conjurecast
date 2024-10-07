@@ -1,0 +1,106 @@
+.about-container {
+  margin: 4rem 0;
+  display: grid;
+  place-items: center;
+  background-color: white;
+  padding: 1rem;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.about-container > p {
+  width: 50%;
+  margin: 1rem;
+  text-align: justify;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.about-players-heading {
+  width: 100%;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: 5rem;
+  background-color: var(--conjured-dark-purple);
+  color: #f9f9f9;
+  text-shadow: 0px 2px 5px black;
+  padding: 0.5rem;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.about-players {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.player-container {
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: start center;
+  padding: 2rem;
+  width: 60%;
+  justify-content: space-evenly;
+  background-color: white;
+  border: 2px solid var(--conjured-blue);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.player-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.player-headshot {
+  width: 100%;
+  border-radius: 100%;
+  background: linear-gradient(
+    180deg,
+    var(--conjured-dark-purple) 0%,
+    var(--conjured-grey) 100%
+  );
+  box-shadow: 0px 2px 5px black;
+  transition: box-shadow 0.3s ease;
+}
+
+.player-info-container {
+  width: 100%;
+  color: var(--conjured-black);
+  grid-column: 2/4;
+  text-align: justify;
+}
+
+.player-name {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.player-description {
+  width: 90%;
+  margin: auto;
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  text-indent: 2rem;
+  line-height: 1.75;
+}
+
+.player-characters-container {
+  width: 100%;
+  grid-column: 1/4;
+  grid-row: 2/3;
+  text-align: center;
+}
+
+.player-characters-container img {
+  margin-top: 1rem;
+  width: 100%;
+  height: 40px;
+}
