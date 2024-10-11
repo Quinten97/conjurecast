@@ -9,6 +9,7 @@
     />
     <title>DnD Americana</title>
     <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../styles/americana.css" />
   </head>
   <body>
     <header>
@@ -20,15 +21,69 @@
       <h1>DnD Americana</h1>
     </header>
     <main>
-      <section>
-        <h2>About DnD Americana</h2>
-        <p>
-          This section focuses on our DnD Americana content. Stay tuned for
-          episodes and more information!
+      <section class="about-container">
+        <h2 class="heading">About DnD Americana</h2>
+        <p class="about-text">
+          DnD Americana is a live-play dungeons and dragons podcast loosely
+          inspired by American Folklore and history. Join us on an adventure
+          into the 8 Wild Territories as our heros take up the fight against
+          "The Great Darkness". Along the way they meet key npcs some of which
+          are based on Historical or Fictional Americans and team up to settle
+          issues both big and small.
         </p>
+        <div class="about-characters-container">
+          <h3 class="about-characters-header">
+            Heroes of The 8 Wild Territories
+          </h3>
+          <div class="player-characters-container">
+            <button
+              class="character-container"
+              data-info="Belos Black is a fierce warrior from the Northern Reaches."
+            >
+              <img
+                src="../assets/Cliff Emberheart.webp"
+                alt="cliff emberheart portrait"
+              />
+              <p>Belos Black</p>
+            </button>
+            <button
+              class="character-container"
+              data-info="Elanon Starsong, a cunning elven mage from the Silverwood."
+            >
+              <img
+                src="../assets/Cliff Emberheart.webp"
+                alt="cliff emberheart portrait"
+              />
+              <p>Elanon Starsong</p>
+            </button>
+            <button
+              class="character-container"
+              data-info="Guy, a mysterious traveler with a shadowy past."
+            >
+              <img
+                src="../assets/Cliff Emberheart.webp"
+                alt="cliff emberheart portrait"
+              />
+              <p>Guy</p>
+            </button>
+            <button
+              class="character-container"
+              data-info="Wyatt Steelheart, a noble orc paladin on a quest for redemption."
+            >
+              <img
+                src="../assets/Cliff Emberheart.webp"
+                alt="cliff emberheart portrait"
+              />
+              <p>Wyatt Steelheart</p>
+            </button>
+          </div>
+          <p class="character-info">
+            Click on a hero to learn more about them.
+          </p>
+        </div>
       </section>
       <section id="podcast-episodes">
-        <h2>Episodes</h2>
+        <h2 class="heading">Episodes</h2>
         <div id="episodes-list"></div>
       </section>
     </main>
@@ -36,5 +91,6 @@
       <p>© 2024 My Podcast</p>
     </footer>
     <script src="../scripts/episodes.js"></script>
+    <script src="../scripts/aboutCharacters.js"></script>
   </body>
 </html>

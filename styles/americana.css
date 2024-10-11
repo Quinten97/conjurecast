@@ -1,0 +1,123 @@
+.about-container {
+  display: grid;
+  place-items: center;
+}
+
+.heading {
+  width: 100%;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: 5rem;
+  background-color: var(--conjured-dark-purple);
+  color: #f9f9f9;
+  text-shadow: 0px 2px 5px black;
+  padding: 0.5rem;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.about-text {
+  background-color: white;
+  width: 50%;
+  border-radius: 0.25rem;
+  padding: 4rem;
+  text-align: justify;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.about-characters-container {
+  background-color: white;
+  margin: 2rem;
+  width: 50%;
+  padding: 2rem;
+  border-radius: 0.25rem;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-characters-header {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.player-characters-container {
+  width: 100%;
+  grid-column: 1/4;
+  grid-row: 2/3;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.character-container {
+  width: 100px;
+  margin-top: 2rem;
+  display: grid;
+  place-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.238);
+  border-radius: 0.5rem;
+  background-color: var(--conjured-grey);
+  border: none;
+}
+
+.character-container:hover {
+  transform: scale(1.02);
+}
+
+.character-container:focus {
+  border: 2px solid var(--conjured-blue);
+}
+
+.character-container > img {
+  margin-top: 1rem;
+  width: 100%;
+  clip-path: polygon(
+    30% 0%,
+    70% 0%,
+    100% 30%,
+    100% 70%,
+    70% 100%,
+    30% 100%,
+    0% 70%,
+    0% 30%
+  );
+}
+
+.character-container > p {
+  font-weight: bold;
+  text-align: center;
+}
+
+#episodes-list {
+  display: grid;
+  place-items: center;
+  gap: 0.5rem;
+  text-align: center;
+  margin: 4rem;
+}
+
+#episodes-list > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 2rem;
+  background-color: white;
+  width: 50%;
+  min-height: 200px;
+  border-radius: 0.25rem;
+  border: 2px solid var(--conjured-blue);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.character-info {
+  text-align: center;
+  margin-top: 4rem;
+  width: 80%;
+  padding: 1rem;
+}
