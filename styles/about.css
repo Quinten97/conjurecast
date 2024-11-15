@@ -1,5 +1,6 @@
+/* General Container */
 .about-container {
-  margin: 4rem 0;
+  margin: 4rem 1rem;
   display: grid;
   place-items: center;
   background-color: white;
@@ -7,24 +8,26 @@
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
+/* Paragraph */
 .about-container > p {
-  width: 50%;
+  width: 90%;
+  max-width: 800px;
   margin: 1rem;
   text-align: justify;
 }
 
+/* Heading */
 h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-align: center;
 }
 
 .about-players-heading {
   width: 100%;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin: 2rem 0;
   text-align: center;
   font-weight: bold;
-  font-size: 5rem;
+  font-size: 4rem;
   background-color: var(--conjured-dark-purple);
   color: #f9f9f9;
   text-shadow: 0px 2px 5px black;
@@ -32,21 +35,23 @@ h1 {
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
+/* Player Containers */
 .about-players {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 2rem;
 }
 
 .player-container {
-  margin-bottom: 2rem;
+  margin: 1rem auto;
   border-radius: 0.5rem;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  place-items: start center;
+  grid-template-columns: 1fr;
+  place-items: center;
   padding: 2rem;
-  width: 60%;
-  justify-content: space-evenly;
+  width: 90%;
+  max-width: 800px;
   background-color: white;
   border: 2px solid var(--conjured-blue);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
@@ -58,53 +63,50 @@ h1 {
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
 }
 
+/* Player Headshot */
 .player-headshot {
-  width: 100%;
-  border-radius: 100%;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
   background: linear-gradient(
     180deg,
     var(--conjured-dark-purple) 0%,
     var(--conjured-grey) 100%
   );
   box-shadow: 0px 2px 5px black;
-  transition: box-shadow 0.3s ease;
 }
 
+/* Player Info */
 .player-info-container {
-  width: 100%;
+  width: 90%;
+  margin-top: 1rem;
   color: var(--conjured-black);
-  grid-column: 2/4;
-  text-align: justify;
+  text-align: center;
 }
 
 .player-name {
-  font-size: 3rem;
-  margin: 0;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 .player-description {
-  width: 90%;
-  margin: auto;
   font-size: 1rem;
-  padding: 0.5rem;
-  margin-top: 0.5rem;
-  text-indent: 2rem;
-  line-height: 1.75;
+  line-height: 1.6;
+  margin: 0 auto;
 }
 
+/* Player Characters */
 .player-characters-container {
-  width: 100%;
-  grid-column: 1/4;
-  grid-row: 2/3;
-  text-align: center;
+  margin-top: 1.5rem;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   gap: 1rem;
+  justify-content: center;
+  width: 300%;
 }
 
 .character-container {
   width: 100px;
-  margin-top: 2rem;
   display: grid;
   place-items: center;
   gap: 0.5rem;
@@ -115,7 +117,6 @@ h1 {
 }
 
 .character-container > img {
-  margin-top: 1rem;
   width: 100%;
   clip-path: polygon(
     30% 0%,
@@ -132,4 +133,34 @@ h1 {
 .character-container > p {
   font-weight: bold;
   text-align: center;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .player-container {
+    grid-template-columns: 1fr 2fr;
+    place-items: center start;
+  }
+
+  .player-info-container {
+    text-align: left;
+  }
+
+  .about-container > p {
+    width: 70%;
+  }
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  .about-players-heading {
+    font-size: 5rem;
+  }
+
+  .player-container {
+    width: 70%;
+  }
 }

@@ -13,7 +13,6 @@
 }
 
 .audio-player-card {
-  height: 30vh;
   background-color: #f9f9f9;
   border: 1px solid #ccc;
   padding: 2.5rem;
@@ -31,18 +30,8 @@
 }
 
 .episode-info {
-  height: 100%;
   display: grid;
   place-items: center;
-  width: 50%;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr;
-}
-
-.info-container {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
 }
 
 .pub-date {
@@ -86,4 +75,91 @@ button:hover {
 .seek-bar,
 .volume-bar {
   accent-color: var(--conjured-dark-purple);
+}
+
+@media (min-width: 1250px) {
+  .audio-player {
+    max-width: 800px;
+  }
+}
+
+@media (max-width: 925px) {
+  .newest-episode-heading {
+    font-size: 3rem;
+    padding: 1rem;
+  }
+
+  .audio-player-card {
+    flex-direction: column; /* Stack elements vertically */
+    height: auto; /* Adjust height for dynamic content */
+    gap: 1rem; /* Reduce gap for compact layout */
+    padding: 1.5rem;
+  }
+
+  .thumbnail {
+    width: 200px; /* Smaller thumbnail */
+    margin: 0 auto; /* Center the image */
+  }
+
+  .episode-info {
+    width: 100%; /* Take full width */
+    text-align: center; /* Center align text */
+    grid-template-rows: auto auto; /* Flexible rows for content */
+  }
+
+  .info-container {
+    align-items: center; /* Center align info */
+    gap: 0.75rem;
+  }
+
+  .audio-player {
+    margin-top: 2rem; /* Adjust spacing */
+    padding: 1rem;
+  }
+
+  .audio-controls {
+    flex-wrap: wrap; /* Wrap controls to fit smaller screens */
+    justify-content: center;
+  }
+
+  button {
+    width: auto; /* Allow buttons to shrink if necessary */
+    padding: 10px 15px; /* Larger padding for easier tapping */
+  }
+
+  .seek-bar,
+  .volume-bar {
+    width: 100%; /* Full width on smaller screens */
+  }
+}
+
+/* Media query for devices with max width of 480px (mobile phones) */
+@media (max-width: 480px) {
+  .newest-episode-heading {
+    font-size: 2.5rem; /* Further reduce font size */
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .audio-player-card {
+    padding: 1rem;
+    box-shadow: none; /* Simplify shadow for minimal design */
+  }
+
+  .thumbnail {
+    width: 150px; /* Further reduce thumbnail size */
+  }
+
+  .episode-info {
+    gap: 0.5rem; /* Reduce spacing */
+  }
+
+  .audio-controls {
+    gap: 0.5rem; /* Compact control buttons */
+  }
+
+  button {
+    font-size: 0.9rem; /* Adjust text size */
+    padding: 8px 10px; /* Adjust padding */
+  }
 }
