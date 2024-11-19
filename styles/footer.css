@@ -1,0 +1,90 @@
+/* Footer Styling */
+.footer {
+  background-color: var(--conjured-blue);
+  color: #ffffff;
+  padding: 20px 15px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  filter: drop-shadow(0px -5px 10px rgba(0, 0, 0, 0.4));
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Social Icons */
+.footer-social {
+  margin-bottom: 20px;
+}
+
+.footer-social a {
+  color: #ffffff;
+  font-size: 20px;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-social a:hover {
+  color: var(--conjured-light-purple); /* Highlight color for hover */
+}
+
+/* Call to Action */
+.footer-cta {
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  background-color: var(--conjured-light-purple);
+  color: #ffffff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: var(--conjured-dark-purple);
+}
+
+/* Quick Links */
+.footer-links {
+  margin-bottom: 20px;
+}
+
+.footer-links a {
+  color: #ffffff;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: var(--conjured-light-purple);
+}
+
+/* Copyright */
+.footer-copyright p {
+  font-size: 14px;
+  color: #cccccc;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-social a {
+    font-size: 18px;
+  }
+
+  .cta-button {
+    display: block;
+    margin: 10px auto;
+  }
+
+  .footer-links a {
+    display: block;
+    margin: 5px 0;
+  }
+}

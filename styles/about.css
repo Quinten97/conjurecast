@@ -135,6 +135,12 @@ h1 {
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  .player-characters-container {
+    width: 100%;
+  }
+}
+
 /* Responsive Design */
 @media (min-width: 768px) {
   .player-container {

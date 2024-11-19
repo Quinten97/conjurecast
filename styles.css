@@ -172,14 +172,6 @@ header {
 .dubby-container:hover {
   filter: brightness(0.75);
 }
-
-footer {
-  background-color: var(--conjured-blue);
-  color: var(--conjured-grey);
-  width: 100%;
-  height: 4rem;
-}
-
 /* Media queries for smaller screens */
 
 /* General adjustments for screens smaller than 768px (tablets and smaller) */
