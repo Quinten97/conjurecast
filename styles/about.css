@@ -65,8 +65,8 @@ h1 {
 
 /* Player Headshot */
 .player-headshot {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   background: linear-gradient(
     180deg,
