@@ -18,7 +18,7 @@
 }
 
 body {
-  background-image: url("https://i.imgur.com/4VRY0Mr.png");
+  background-image: url("./assets/tiktokbackground.png");
   max-width: 100%;
   background-color: var(--conjured-grey);
   background-attachment: fixed;
