@@ -1,3 +1,5 @@
+const thumbnailpic = "../assets/dndamericana.jpg";
+
 const rssFeedUrl = "https://anchor.fm/s/ea5c4870/podcast/rss"; // Replace with your RSS feed URL
 const apiUrl = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(
   rssFeedUrl
@@ -32,7 +34,7 @@ fetch(apiUrl)
     // Create custom player layout
     newestEpisodeContainer.innerHTML = `
     <div class="audio-player-card">
-        <img src="${newestEpisode.thumbnail}" alt="${
+        <img src="${thumbnailpic}" alt="${
       newestEpisode.title
     }" class="thumbnail" />
         <div class="episode-info">
