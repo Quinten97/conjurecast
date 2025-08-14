@@ -26,9 +26,9 @@ fetch(apiUrl)
     console.log(data);
     const episodesList = document.getElementById("episodes-list");
 
-    // Filter items where the title starts with "DND Americana"
+    // Filter items where the title starts with "Horizons Edge"
     const filteredItems = data.items.filter((item) =>
-      item.title.startsWith("DND Americana")
+      item.title.startsWith("Horizons Edge")
     );
 
     filteredItems.forEach((item) => {
