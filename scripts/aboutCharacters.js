@@ -31,6 +31,7 @@ const characterInfo = {
     When Elder’s sheriff died, Wyatt stepped forward, vowing to bring order to the unruly town. 
     As sheriff, he hunted rogue spellcasters, protected the innocent, and found a purpose rooted in redemption. 
     <br><br>Haunted by his past, Wyatt now stands as a symbol of hope, wielding his six-shooter and faith to protect Elder from magical threats, redeeming himself and the town he calls home.`,
+  croy: `test `,
 };
 
 // Add a click event listener to each button
