@@ -23,15 +23,22 @@ function cleanDescription(description) {
 fetch(apiUrl)
   .then((response) => response.json())
   .then((data) => {
+    console.log(data);
     const episodesList = document.getElementById("episodes-list");
-    data.items.forEach((item) => {
+
+    // Filter items where the title starts with "DND Americana"
+    const filteredItems = data.items.filter((item) =>
+      item.title.startsWith("DND Americana")
+    );
+
+    filteredItems.forEach((item) => {
       const cleanedDescription = cleanDescription(item.description);
       const episodeItem = document.createElement("div");
       episodeItem.innerHTML = `
         <h3><a href="${item.link}" target="_blank">${item.title}</a></h3>
         <p>${item.pubDate}</p>
         <p>${cleanedDescription.trim()}</p>
-    `;
+      `;
       episodesList.appendChild(episodeItem);
     });
   })

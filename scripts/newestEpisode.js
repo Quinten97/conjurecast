@@ -34,7 +34,7 @@ fetch(apiUrl)
     // Create custom player layout
     newestEpisodeContainer.innerHTML = `
     <div class="audio-player-card">
-        <img src="${thumbnailpic}" alt="${
+        <img src="${data.items[0].thumbnail}" alt="${
       newestEpisode.title
     }" class="thumbnail" />
         <div class="episode-info">

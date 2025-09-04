@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Welcome to ConjureCast, check out our podcast DnD Americana!"
+    />
+    <title>DnD Americana</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../styles/horizonsEdge.css" />
+    <link rel="stylesheet" href="../styles/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <nav class="navbar">
+          <a id="navbar-link" href="../index.html">Home</a>
+          <a id="navbar-link" href="./about.html">About</a>
+          <a id="navbar-link" href="./dnd-americana.html">DnD Americana</a>
+          <a id="navbar-link" href="./horizons-edge.html">Horizons Edge</a>
+        </nav>
+      </header>
+      <main>
+        <section class="about-container">
+          <h2 class="heading">About Horizons Edge</h2>
+          <p class="about-text">
+            Horizon's Edge, an exploratory vessel sent out on all encompassing
+            missions from escorting high profile figures to reaching into the
+            unknown regions of space. Join us on our live play adventure into a
+            Spelljammer campaign loosely based on the Star Trek universe.
+          </p>
+          <div class="about-characters-container">
+            <h3 class="about-characters-header">Officers of Horizons Edge</h3>
+            <div class="player-characters-container">
+              <button class="character-container" data-info="agentG">
+                <img
+                  src="../assets/characters/Agent G.svg"
+                  alt="Agent G. portrait"
+                />
+                <p>Agent. G</p>
+              </button>
+              <button class="character-container" data-info="vulnak">
+                <img
+                  src="../assets/characters/Vulnak.svg"
+                  alt="Vul'nak portrait"
+                />
+                <p>Vul'Nack</p>
+              </button>
+              <button class="character-container" data-info="blink">
+                <img
+                  src="../assets/characters/Blink.svg"
+                  alt="Blink portrait"
+                />
+                <p>Blink</p>
+              </button>
+              <button class="character-container" data-info="danny">
+                <img
+                  src="../assets/characters/Danny Darkstar.svg"
+                  alt="Danny Darkstar portrait"
+                />
+                <p>Danny Darkstar</p>
+              </button>
+            </div>
+            <p class="character-info">
+              Click on a hero to learn more about them.
+            </p>
+          </div>
+        </section>
+        <section id="podcast-episodes">
+          <h2 class="heading">Episodes</h2>
+          <div id="episodes-list"></div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer-container">
+          <!-- Social Links -->
+          <div class="footer-social">
+            <a
+              href="https://www.facebook.com/profile.php?id=61558587211402"
+              aria-label="Facebook"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/conjurecast/"
+              aria-label="Instagram"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a
+              href="https://www.youtube.com/@ConjureCast"
+              aria-label="YouTube"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a
+              href="https://www.tiktok.com/@conjure_cast"
+              aria-label="TikTok"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-tiktok"></i>
+            </a>
+          </div>
+
+          <!-- Call to Action -->
+          <div class="footer-cta">
+            <p>
+              Don't miss an episode! &nbsp;
+              <a
+                target="_blank"
+                href="https://open.spotify.com/show/4A4IX0q6Ev48qbz1BySk1U?si=c1c5db81f7c749f0"
+                class="cta-button"
+                >Listen Now</a
+              >
+            </p>
+          </div>
+          <!-- Copyright -->
+          <div class="footer-copyright">
+            <p>&copy; 2024 ConjureCast. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="../scripts/horizonsEdgeEpisodes.js"></script>
+    <script src="../scripts/aboutHECharacters.js"></script>
+  </body>
+</html>

@@ -48,7 +48,7 @@
 .player-characters-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 4 columns on desktop */
-  gap: 3rem;
+  gap: 2rem;
   justify-items: center;
   width: 100%;
   max-width: 1200px;
@@ -66,6 +66,11 @@
     ); /* 2 columns between 768px - 1300px */
     gap: 2rem;
   }
+}
+
+.player-characters-container > :last-child {
+  grid-column: 1/-1;
+  justify-self: center;
 }
 
 .character-container {
@@ -157,6 +162,11 @@
     gap: 2rem;
   }
 
+  .player-characters-container > :last-child {
+    grid-column: 1/-1;
+    justify-self: center;
+  }
+
   .character-container {
     width: 80px;
     padding: 0.5rem;
@@ -190,6 +200,10 @@
   .player-characters-container {
     grid-template-columns: repeat(2, 1fr); /* 2 columns on mobile */
     gap: 1.5rem;
+  }
+  .player-characters-container > :last-child {
+    grid-column: 1/-1;
+    justify-self: center;
   }
 
   .character-container {

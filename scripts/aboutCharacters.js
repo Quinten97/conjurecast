@@ -31,6 +31,9 @@ const characterInfo = {
     When Elder’s sheriff died, Wyatt stepped forward, vowing to bring order to the unruly town. 
     As sheriff, he hunted rogue spellcasters, protected the innocent, and found a purpose rooted in redemption. 
     <br><br>Haunted by his past, Wyatt now stands as a symbol of hope, wielding his six-shooter and faith to protect Elder from magical threats, redeeming himself and the town he calls home.`,
+  croy: `
+    Left alone after his human father was killed by outlaws, Croy was taken in by the Drakewardens and trained in their ways. 
+    He now wanders his adopted home and attempts to put down the uprise in lawlessness that has taken place. `,
 };
 
 // Add a click event listener to each button
