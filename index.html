@@ -66,6 +66,20 @@
             >Horizons Edge</a
           > -->
         </nav>
+
+        <div id="discord-banner" class="discord-banner">
+          <div class="discord-content">
+            <span>Join our community on Discord!</span>
+            <a
+              href="https://discord.gg/E4ZrB7dEq6"
+              target="_blank"
+              class="discord-link"
+              >Join Now</a
+            >
+          </div>
+          <button class="discord-close" onclick="dismissBanner()">✕</button>
+        </div>
+
         <div id="logo-container">
           <div id="header-logo-container">
             <img
@@ -200,5 +214,11 @@
     </div>
     <!-- <script src="./scripts/newestEpisode.js"></script> -->
     <script async src="https://widget.spreaker.com/widgets.js"></script>
+    <script>
+      function dismissBanner() {
+        document.getElementById("discord-banner").classList.add("hidden");
+        localStorage.setItem("discordBannerDismissed", "true");
+      }
+    </script>
   </body>
 </html>

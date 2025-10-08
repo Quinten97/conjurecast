@@ -166,6 +166,54 @@ header {
 .dubby-container:hover {
   filter: brightness(0.75);
 }
+
+.discord-banner {
+  position: relative; /* allow absolute positioning inside */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  background: var(--conjured-dark-purple);
+  color: #f9f9f9;
+  padding: 12px 40px 12px 12px; /* add right padding so close button doesn’t overlap */
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+.discord-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.discord-link {
+  background: var(--conjured-blue);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+}
+.discord-link:hover {
+  background: #2c34a2;
+}
+.discord-close {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+.hidden {
+  display: none;
+}
+
 /* Media queries for smaller screens */
 
 /* General adjustments for screens smaller than 768px (tablets and smaller) */
