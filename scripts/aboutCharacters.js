@@ -32,8 +32,9 @@ const characterInfo = {
     As sheriff, he hunted rogue spellcasters, protected the innocent, and found a purpose rooted in redemption. 
     <br><br>Haunted by his past, Wyatt now stands as a symbol of hope, wielding his six-shooter and faith to protect Elder from magical threats, redeeming himself and the town he calls home.`,
   croy: `
-    Left alone after his human father was killed by outlaws, Croy was taken in by the Drakewardens and trained in their ways. 
-    He now wanders his adopted home and attempts to put down the uprise in lawlessness that has taken place. `,
+   A half-elf sharpshooter from Cactus Bluff, Croy grew up between two worlds — rejected by one and scarred by loss in the other. Trained by a secretive order of Drakewardens, 
+   he now travels with his loyal drake companion, seeking to bring justice to a land steeped in corruption. But as he digs deeper into his past, 
+   Croy discovers that his father’s legacy — and his own destiny — are tied to far greater forces than he ever imagined. `,
 };
 
 // Add a click event listener to each button
